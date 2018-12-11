@@ -1,0 +1,38 @@
+[core]
+    pager = cat
+    ignoreCygwinFSTricks = true
+    excludesfile =  ~/.gitignore_global
+    filemode = false
+[color]
+    ui = auto
+[alias]
+    st = status
+    co = checkout
+    lsb = branch -a
+    br = branch
+    lg = log --pretty=oneline --abbrev-commit -18
+    df = diff --no-ext-diff
+    dfc = diff --no-ext-diff --cached
+[http]
+#    proxy = http://127.0.0.1:1080
+[push]
+    default = simple
+[credential]
+	helper = manager
+[diff]
+    tool = p4diff
+[difftool]
+    prompt = false
+    trustExitCode = false
+[difftool "p4diff"]
+    cmd = p4merge \"$(cygpath -w \"$LOCAL\")\" \"$(cygpath -w \"$REMOTE\")\"
+[merge]
+    tool = p4merge
+[mergetool "p4merge"]
+    cmd = p4merge \"$(cygpath -w \"$BASE\")\" \"$(cygpath -w \"$LOCAL\")\" \"$(cygpath -w \"$REMOTE\")\" \"$(cygpath -w \"$MERGED\")\"
+    trustExitCode = true
+    keepBackup = false
+
+[user]
+	email = gaotaonull@gmail.com
+	name = GaoTao
