@@ -15,6 +15,7 @@
     ```
 
     - ```bindkey '^ ' autosuggest-accept``` 添加到plugins之后
+    - 修改~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh中的 ${ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'}
 - 安装插件zsh-syntax-highlighting
     - Clone this repository in oh-my-zsh's plugins directory:
      ```
