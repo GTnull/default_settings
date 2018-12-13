@@ -14,5 +14,5 @@
     plugins=(zsh-autosuggestions)
     ```
 
-    - Start a new terminal session.
+    - ```bindkey '^ ' autosuggest-accept``` 添加到plugins之后
 - 将.gitconfig内容放到~目录下
