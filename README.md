@@ -1,6 +1,9 @@
 # default_settings
 -  安装cygwin，选择git curl wget zsh
 - 安装oh-my-zsh
+    ```sh
+    sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+    ```
 - 安装插件autosuggestions
     - Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
 
