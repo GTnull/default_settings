@@ -32,4 +32,17 @@
        ```
        source ~/.zshrc
        ```
+       
+- 安装autojump
+    - 下载插件autojump到/.oh-my-zsh/custom目录中
+    ```
+    git clone https://github.com/wting/autojump.git $ZSH_CUSTOM/plugins/autojump
+    ```
+    - 到目录autojump中
+    ```
+    cd $ZSH_CUSTOM/plugins/autojump
+    #执行install.py
+    ./install.py
+    ```
+
 - 将.gitconfig内容放到~目录下
